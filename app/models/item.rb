@@ -1,5 +1,6 @@
 class Item < ApplicationRecord
 	attachment :image
+	belongs_to :genre
 
 	def self.search(search)
 	  if search
